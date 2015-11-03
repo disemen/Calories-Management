@@ -25,7 +25,9 @@
           чем работа с плагином напрямую. 
    
 -  Подключение веб ресурсов. <a href="http://www.webjars.org/">WebJars</a>.
+-  <a href="http://www.jamesward.com/2012/04/25/introducing-webjars-web-libraries-as-managed-dependencies">Introducing WebJars</a>
 -  <a href="https://ru.wikipedia.org/wiki/Document_Object_Model">Document Object Model (DOM)</a>
+-  <a href="https://css-tricks.com/dom/">What is the DOM?</a>
 -  <a href="https://ru.wikipedia.org/wiki/JQuery">jQuery</a>
 -  <a href="http://dandelion.github.io">Dandelion</a>, <a href="https://github.com/spring-projects/spring-petclinic">Spring Pet Clinic</a>
 -  <a href="https://www.datatables.net/">DataTables</a>
@@ -80,11 +82,18 @@
 -  Тестируем Security REST через SoapUI
 
 ## Домашнее задание HW08
-    Перевести mealList на datatables (mealList.jsp, UserMealAjaxController)
-    Реализовать добавление записи еды через модальное окно Bootstrap и удаление/добавление еды по ajax .
+    Перевести mealList на datatables (mealList.jsp, UserMealAjaxController).
+    Реализовать добавление записи еды через модальное окно Bootstrap и удаление/добавление еды по ajax.
+    Чинить перерисовку НЕ надо: отрисовываем таблицу через jsp. 
+                        При вставке данных по AJAX пропадает все JSP форматирование.
+    Следующий урок- будем делать datatable по AJAX и форматирование на стороне клиента.
 
 Optional.
 
     Реализовать enable/disable User через checkbox в userList.jsp с сохранением в DB
+    Перейти на новый dataTables API (https://www.datatables.net/reference/api/)
+    Избавиться от дублирования id="${user.id}" в строках таблиц users и meals 
+             (id должно быть уникальным: http://pyramidin.narod.ru/html401/global.html#h-7.5.2)
     
 ## <a href="https://gitter.im/JavaOPs/topjava/Lesson08">Gitter форум</a>
+
