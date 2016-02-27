@@ -23,4 +23,6 @@ public interface UserService {
     User getByEmail(String email) throws NotFoundException;
 
     void update(User user) throws NotFoundException;
+    
+    void evictCache();
 }
